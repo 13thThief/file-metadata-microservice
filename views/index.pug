@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="description", content="File Metadata Microservice by Manpreet Krishan")
+    
+    title File Metadata Microservice - API & Microservice
+
+    link(rel="stylesheet" href="/main.css")
+  body(class="container")
+    header(class="header")
+      div(class="wrap")
+        a(class="header-title" href="https://github.com/13thThief/filem-metadata-microservice") File Metadata Microservice
+        p(class="header-description") Made with Node.js, Express.js, Pug.js, Multer
+    article(class="content")
+      p.
+        Upload a file to get its metadata
+      form(enctype="multipart/form-data" method="POST" action="/api/fileanalyse")
+        label(for="url_input") Upload a file
+        br 
+        input(id="inputfield" type="file" name="upfile")
+        br
+        input(id="button" type="submit" value="Upload")
+    footer(class="footer")
+      p Created by <a href="https://github.com/13thThief">Manpreet Krishan</a>
